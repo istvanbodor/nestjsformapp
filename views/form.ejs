@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>App</title>
+    <script src="/public/validate.js"></script>
+  </head>
+  <body>
+   <form method="post">
+
+    <p>
+        <label>
+            Név: <br>
+            <input required type="text" name="nev" id="nev">
+
+        </label>
+    </p>
+
+    <p>
+        <label>
+            Típus: <br>
+            <input required type="text" name="tipus" id="tipus">
+
+        </label>
+    </p>
+
+    <p>
+        <label>
+            Szín: <br>
+            <input type="color" name="szin" required id="szin">
+
+        </label>
+    </p>
+
+
+
+    <p>
+        <label>
+            Ár: <br>
+            <input type="number" name="ar" required min="1" id="ar">
+        </label>
+    </p>
+
+    <p>
+        <label>
+            Akku állapot: <br>
+            <input min="1" max="100" required type="number" name="akkuallapot" id="akkuallapot">
+        </label>
+    </p>
+
+    <p>
+        <label>
+            Állapot: <br>
+            <select required name="allapot" id="allapot">
+                <option value="uj">Új</option>
+                <option value="ujszeru">Újszerű</option>
+                <option value="karcos">Karcos</option>
+            </select>
+        </label>
+    </p>
+
+    <input type="submit" value="OK" >
+
+   </form>
+
+
+
+  </body>
+</html>
